@@ -1,0 +1,422 @@
+
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    padding-top: 80px; /* Ruang untuk header */
+}
+
+section {
+    padding: 80px 20px; /* Ruang di atas dan bawah */
+    margin-bottom: 20px; /* Jarak antar section */
+    scroll-margin-top: 80px; /* Mencegah terlewatnya judul */
+}
+
+header {
+    position: fixed; /* Membuat header tetap */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Agar header selalu di atas */
+    height: 80px; /* Tinggi header */
+}
+header {
+    position: fixed; /* Make the header fixed */
+    top: 0; /* Position it at the top */
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.container {
+    background-color: #789DBC; /* Add background to the container */
+}
+
+.navbar-menu {
+    padding-top: 20px; /* Adjust padding as necessary */
+}
+
+body {
+    padding-top: 80px; /* Prevent content from being hidden behind the fixed navbar */
+}
+
+.container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 20px;
+background-color: #6A9C89;
+}
+nav {
+    overflow: hidden; /* Mencegah elemen di dalam navbar mengubah ukuran */
+}
+.logo {
+font-size: 10px;
+font-weight: bold;
+display: flex;
+}
+.logo {
+    display: flex;
+    align-items: center; /* Memusatkan logo dan h1 */
+    padding: 0; /* Atur padding sesuai kebutuhan */
+}
+.container {
+    height: 75px;
+    justify-content: space-between;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.logo-text {
+    margin-left: 10px;
+    font-size: 6em; /* Ubah ukuran sesuai kebutuhan */
+    line-height: normal; /* Menghindari perubahan tinggi navbar */
+}
+
+.navbar-menu{
+    font-size: 120%;
+    text-align: center;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 37px;
+}
+nav ul {
+list-style: none;
+display: flex;
+}
+
+nav ul li {
+margin-left: 20px;
+}
+
+nav ul li a {
+text-decoration: none;
+color: black;
+}
+
+#main-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 40px 20px;
+}
+
+.btn-selengkapnya {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007BFF; /* Ganti dengan warna yang diinginkan */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-selengkapnya:hover {
+    background-color: #0056b3; /* Ganti dengan warna hover */
+}
+
+.content {
+width: 50%;
+}
+
+.image img {
+max-width: 40%;
+margin-left: 500px;
+height: auto;
+}
+
+button {
+background-color: #6a6a6a;
+color: white;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #6a6a6a;
+}
+
+#info {
+display: flex;
+justify-content: space-between;
+padding: 40px 20px;
+background-color: #C1D8C3;
+}
+
+.info-item {
+width: 45%;
+}
+
+#kurikulum {
+text-align: center;
+padding: 40px 20px;
+}
+
+.pengajar {
+text-align: center;
+background-color: #A0D683;
+padding: 80px 40px;
+}
+.pengajar-judul {
+    text-align: center;
+}
+#pengajar-grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 20px;
+}
+
+.pengajar-item {
+background-color: #C1D8C3;
+padding: 10px;
+border-radius: 10px;
+text-align: center;
+}
+
+.pengajar-item img {
+width: 100px;
+height: 100px;
+margin-bottom: 10px;
+}
+
+/* Gaya dasar untuk slideshow */
+#fasilitas {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Gaya untuk setiap slide */
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Gaya untuk tombol Previous dan Next */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Gaya untuk teks caption */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Efek transisi slide */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* Gaya untuk titik navigasi */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+.carousel {
+background-color: #8BACAA;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 30px;
+margin: 0 auto;
+width: 80%;
+border-radius: 8px;
+}
+
+.image-placeholder {
+width: 30%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.image-placeholder img {
+width: 100%;
+height: auto;
+border: 2px solid #000;
+border-radius: 8px;
+}
+
+.description {
+width: 65%;
+font-size: 16px;
+color: #333;
+padding: 20px;
+}
+#contact {
+padding: 40px 20px;
+background-color: #C1D8C3;
+display: flex;
+justify-content: space-between;
+}
+
+form {
+width: 50%;
+}
+
+form input, form textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+button[type="submit"] {
+background-color: #6a6a6a;
+color: white;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+}
+
+button[type="submit"]:hover {
+background-color: #D0B8A8;
+}
+
+.social-media {
+width: 30%;
+text-align: left;
+}
+.social-media {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-item {
+    display: flex;
+    align-items: center; /* Vertikal center */
+    margin-bottom: 10px; /* Jarak antar item */
+    text-decoration: none;
+}
+.social-item a {
+    text-decoration: none; /* Menghapus garis bawah */
+    color: black;
+}
+.social-item a:hover {
+    color: white;
+}
+.social-item img {
+    margin-right: 10px; /* Jarak antara gambar dan teks */
+}
+
+.social-media h3 {
+margin-bottom: 10px;
+}
+
+.social-media p a {
+color: black;
+text-decoration: none;
+}
+.akun1 {
+    margin: 50px 0px;
+}
+.footer-section {
+    background-color: #333; /* Warna latar belakang */
+    color: white; /* Warna teks */
+    text-align: center; /* Memusatkan teks */
+    padding: 20px; /* Ruang di dalam footer */
+}
+
+.footer-content {
+    margin-bottom: 20px; /* Jarak antara konten footer dan link */
+}
+
+.footer-content h3 {
+    margin-bottom: 10px; /* Jarak antara judul dan paragraf */
+}
+
+.social-media-footer {
+    display: flex; /* Menggunakan flexbox untuk mengatur tata letak */
+    margin: 10px 0; /* Jarak di atas dan bawah */
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-footer {
+    text-align: center; /* Memusatkan konten */
+}
+
+.social-group {
+    margin: 10px 90px; /* Jarak vertikal antara grup sosial media */
+}
+
+.social-group a {
+    margin: 0 10px; /* Jarak horizontal antar ikon */
+}
+
+.social-group img {
+    width: 30px; /* Ukuran ikon sosial media */
+    height: auto; /* Mempertahankan rasio aspek */
+}
+
+.footer-links {
+    margin-top: 10px; /* Jarak di atas link */
+}
+
+.footer-links a {
+    color: white; /* Warna teks link */
+    margin: 0 15px; /* Jarak antar link */
+    text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Menambahkan garis bawah saat hover */
+}
